@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#123456" >
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"    
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mall"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"  
+	        android:gravity="right"  
+	        android:padding="5dp" >
+	        <TextView
+	            android:id="@+id/tvlink"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Goto Website"
+	            android:autoLink="web"
+	            android:textColor="#ffffff" />
+        </LinearLayout>
+
+	</LinearLayout>
+        
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvaddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            
+            android:background="#aaaaaa" />
+
+	</LinearLayout>
+       
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        
+		<fragment
+             android:id="@+id/map"
+             android:name="com.google.android.gms.maps.SupportMapFragment"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             class="com.google.android.gms.maps.MapFragment" />
+        
+    </LinearLayout>
+
+</LinearLayout>
